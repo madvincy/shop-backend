@@ -1,0 +1,161 @@
+{
+    "all": {
+      "success": {
+        "res": {
+          "statusCode": 200,
+          "headers": {
+            "content-type": "application/json"
+          }
+        },
+        "body": {
+          "status": "success",
+          "data": [
+            {
+                "id": 1,
+              "phone_no":7000000,
+              "cust_name": "sam"
+             
+            },
+            {
+                "id": 2,
+                "phone_no": 173467327,
+                "cust_name": "Tim"
+               
+              }
+           
+          ]
+        }
+      }
+    },
+    "single": {
+      "success": {
+        "res": {
+          "statusCode": 200,
+          "headers": {
+            "content-type": "application/json"
+          }
+        },
+        "body": {
+          "status": "success",
+          "data": [
+            {
+                "id": 3,
+                "phone_no": 46374656327,
+                "cust_name": "samui"
+               
+              }
+          ]
+        }
+      },
+      "failure": {
+        "res": {
+          "statusCode": 404,
+          "headers": {
+            "content-type": "application/json"
+          }
+        },
+        "body": {
+          "status": "error",
+          "message": "That customer does not exist."
+        }
+      }
+    },
+    "add": {
+      "success": {
+        "res": {
+          "statusCode": 201,
+          "headers": {
+            "content-type": "application/json"
+          }
+        },
+        "body": {
+          "status": "success",
+          "data": [
+            {
+                "id": 4,
+                "phone_no": 74846327,
+                "cust_name": "samed"
+               
+              }
+          ]
+        }
+      },
+      "failure": {
+        "res": {
+          "statusCode": 400,
+          "headers": {
+            "content-type": "application/json"
+          }
+        },
+        "body": {
+          "status": "error",
+          "message": "Something went wrong."
+        }
+      }
+    },
+    "update": {
+      "success": {
+        "res": {
+          "statusCode": 200,
+          "headers": {
+            "content-type": "application/json"
+          }
+        },
+        "body": {
+          "status": "success",
+          "data": [
+            {
+                "id": 5,
+                "phone_no": 1234567,
+                "cust_name": "shem"
+               
+              }
+          ]
+        }
+      },
+      "failure": {
+        "res": {
+          "statusCode": 404,
+          "headers": {
+            "content-type": "application/json"
+          }
+        },
+        "body": {
+          "status": "error",
+          "message": "That Customer does not exist."
+        }
+      }
+    },
+    "delete": {
+      "success": {
+        "res": {
+          "statusCode": 200,
+          "headers": {
+            "content-type": "application/json"
+          }
+        },
+        "body": {
+          "status": "success",
+          "data": [
+            {
+              "id": 1,
+              "phone_no":7000000,
+              "cust_name": "sam"
+              }
+          ]
+        }
+      },
+      "failure": {
+        "res": {
+          "statusCode": 404,
+          "headers": {
+            "content-type": "application/json"
+          }
+        },
+        "body": {
+          "status": "error",
+          "message": "That customer does not exist."
+        }
+      }
+    }
+  }
